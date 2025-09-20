@@ -18,4 +18,7 @@ app.get('/', (req, res) => {
   res.send('Kalvium EventHub API is running!');
 });
 
-// Star
+// Start the server
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
